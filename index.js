@@ -38,7 +38,7 @@ function main() {
 
             if (!(Date.now() - startTime < restFor)) {
                 let randTime = rand_range(0, 294000 + 1);
-                console2.log('To pause for (minutes): ', randTime / 60000)
+                console.log('To pause for (minutes): ', randTime / 60000)
 
                 msleep(randTime);22
                 restFor = rand_range(30000, 420000 + 1);
