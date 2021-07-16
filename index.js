@@ -1,3 +1,4 @@
+const cv = require('opencv4nodejs');
 const robot = require('robotjs');
 const crypto = require('crypto');
 const dateFormat = require('dateformat');
@@ -16,7 +17,32 @@ const WANTED_POSITION = {
     y_max: 1149
 };
 
-const EMPTY_INVENTORY_COLOR = ['0c1d26', '0c1e28', '0d212d', '0d1f29', '061820', '081a24', '0d1e26', '0f222c', '0b1d27', '11252e', '0b1c24', '102129', '091d27', '0a1c26', '071821', '081920', '0d232d', '091e29', '122832', '0b1b23', '11232b', '071923', '0a1a22', '162a34'];
+const EMPTY_INVENTORY_COLOR = [
+    "0c1d26",
+    "0c1e28",
+    "0d212d",
+    "0d1f29",
+    "061820",
+    "081a24",
+    "0d1e26",
+    "0f222c",
+    "0b1d27",
+    "11252e",
+    "0b1c24",
+    "102129",
+    "091d27",
+    "0a1c26",
+    "071821",
+    "081920",
+    "0d232d",
+    "091e29",
+    "122832",
+    "0b1b23",
+    "11232b",
+    "071923",
+    "0a1a22",
+    "162a34",
+];
 
 function main() {
     console.log('Program Starting...');
@@ -33,14 +59,14 @@ function main() {
         console.log('Rest for (minutes): ', restFor / 60000);
 
         //while (Date.now() - startTime < restAt) {
-        while (true) {2
+        while (true) {
             console.log('A loop start.');
 
             if (!(Date.now() - startTime < restFor)) {
                 let randTime = rand_range(0, 294000 + 1);
                 console.log('To pause for (minutes): ', randTime / 60000)
 
-                msleep(randTime);22
+                msleep(randTime);
                 restFor = rand_range(30000, 420000 + 1);
                 startTime = Date.now();
                 console.log('Start time: ', dateFormat(startTime));
