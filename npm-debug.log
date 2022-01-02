@@ -1,0 +1,593 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose install where, deps [ 'F:\\TEST',
+5 verbose install   [ 'crypto', 'dateformat', 'ffi', 'lodash', 'opencv', 'robotjs' ] ]
+6 verbose install where, peers [ 'F:\\TEST', [] ]
+7 info preinstall test@1.0.0
+8 warn package.json buffer@5.7.1 buffer is also the name of a node core module.
+9 warn package.json crypto@1.0.1 crypto is also the name of a node core module.
+10 warn package.json string_decoder@1.1.1 string_decoder is also the name of a node core module.
+11 verbose already installed skipping crypto@^1.0.1 F:\TEST
+12 verbose already installed skipping dateformat@^4.5.1 F:\TEST
+13 verbose already installed skipping ffi@^2.3.0 F:\TEST
+14 verbose already installed skipping lodash@^4.17.21 F:\TEST
+15 verbose already installed skipping opencv@^7.0.0 F:\TEST
+16 verbose already installed skipping robotjs@^0.6.0 F:\TEST
+17 silly install resolved []
+18 info build F:\TEST
+19 verbose linkStuff [ false, false, false, 'F:\\' ]
+20 info linkStuff test@1.0.0
+21 verbose linkBins test@1.0.0
+22 verbose linkMans test@1.0.0
+23 verbose rebuildBundles test@1.0.0
+24 verbose rebuildBundles [ '.bin',
+24 verbose rebuildBundles   'ansi-regex',
+24 verbose rebuildBundles   'aproba',
+24 verbose rebuildBundles   'are-we-there-yet',
+24 verbose rebuildBundles   'base64-js',
+24 verbose rebuildBundles   'bindings',
+24 verbose rebuildBundles   'bl',
+24 verbose rebuildBundles   'buffer',
+24 verbose rebuildBundles   'buffers',
+24 verbose rebuildBundles   'chownr',
+24 verbose rebuildBundles   'code-point-at',
+24 verbose rebuildBundles   'console-control-strings',
+24 verbose rebuildBundles   'core-util-is',
+24 verbose rebuildBundles   'crypto',
+24 verbose rebuildBundles   'dateformat',
+24 verbose rebuildBundles   'debug',
+24 verbose rebuildBundles   'decompress-response',
+24 verbose rebuildBundles   'deep-extend',
+24 verbose rebuildBundles   'delegates',
+24 verbose rebuildBundles   'detect-libc',
+24 verbose rebuildBundles   'end-of-stream',
+24 verbose rebuildBundles   'expand-template',
+24 verbose rebuildBundles   'ffi',
+24 verbose rebuildBundles   'fs-constants',
+24 verbose rebuildBundles   'gauge',
+24 verbose rebuildBundles   'github-from-package',
+24 verbose rebuildBundles   'has-unicode',
+24 verbose rebuildBundles   'ieee754',
+24 verbose rebuildBundles   'inherits',
+24 verbose rebuildBundles   'ini',
+24 verbose rebuildBundles   'is-fullwidth-code-point',
+24 verbose rebuildBundles   'isarray',
+24 verbose rebuildBundles   'lodash',
+24 verbose rebuildBundles   'mimic-response',
+24 verbose rebuildBundles   'minimist',
+24 verbose rebuildBundles   'mkdirp-classic',
+24 verbose rebuildBundles   'ms',
+24 verbose rebuildBundles   'nan',
+24 verbose rebuildBundles   'napi-build-utils',
+24 verbose rebuildBundles   'node-abi',
+24 verbose rebuildBundles   'noop-logger',
+24 verbose rebuildBundles   'npmlog',
+24 verbose rebuildBundles   'number-is-nan',
+24 verbose rebuildBundles   'object-assign',
+24 verbose rebuildBundles   'once',
+24 verbose rebuildBundles   'opencv',
+24 verbose rebuildBundles   'prebuild-install',
+24 verbose rebuildBundles   'process-nextick-args',
+24 verbose rebuildBundles   'pump',
+24 verbose rebuildBundles   'rc',
+24 verbose rebuildBundles   'readable-stream',
+24 verbose rebuildBundles   'ref',
+24 verbose rebuildBundles   'ref-struct',
+24 verbose rebuildBundles   'robotjs',
+24 verbose rebuildBundles   'safe-buffer',
+24 verbose rebuildBundles   'semver',
+24 verbose rebuildBundles   'set-blocking',
+24 verbose rebuildBundles   'signal-exit',
+24 verbose rebuildBundles   'simple-concat',
+24 verbose rebuildBundles   'simple-get',
+24 verbose rebuildBundles   'string-width',
+24 verbose rebuildBundles   'string_decoder',
+24 verbose rebuildBundles   'strip-ansi',
+24 verbose rebuildBundles   'strip-json-comments',
+24 verbose rebuildBundles   'tar-fs',
+24 verbose rebuildBundles   'tar-stream',
+24 verbose rebuildBundles   'tunnel-agent',
+24 verbose rebuildBundles   'util-deprecate',
+24 verbose rebuildBundles   'which-pm-runs',
+24 verbose rebuildBundles   'wide-align',
+24 verbose rebuildBundles   'wrappy' ]
+25 verbose rebuild bundle F:\TEST\node_modules\ansi-regex
+26 info build F:\TEST\node_modules\ansi-regex
+27 info preinstall ansi-regex@2.1.1
+28 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+29 info linkStuff ansi-regex@2.1.1
+30 verbose linkBins ansi-regex@2.1.1
+31 verbose linkMans ansi-regex@2.1.1
+32 verbose rebuildBundles ansi-regex@2.1.1
+33 info install ansi-regex@2.1.1
+34 info postinstall ansi-regex@2.1.1
+35 verbose rebuild bundle F:\TEST\node_modules\aproba
+36 info build F:\TEST\node_modules\aproba
+37 info preinstall aproba@1.2.0
+38 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+39 info linkStuff aproba@1.2.0
+40 verbose linkBins aproba@1.2.0
+41 verbose linkMans aproba@1.2.0
+42 verbose rebuildBundles aproba@1.2.0
+43 info install aproba@1.2.0
+44 info postinstall aproba@1.2.0
+45 verbose rebuild bundle F:\TEST\node_modules\are-we-there-yet
+46 info build F:\TEST\node_modules\are-we-there-yet
+47 info preinstall are-we-there-yet@1.1.5
+48 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+49 info linkStuff are-we-there-yet@1.1.5
+50 verbose linkBins are-we-there-yet@1.1.5
+51 verbose linkMans are-we-there-yet@1.1.5
+52 verbose rebuildBundles are-we-there-yet@1.1.5
+53 info install are-we-there-yet@1.1.5
+54 info postinstall are-we-there-yet@1.1.5
+55 verbose rebuild bundle F:\TEST\node_modules\base64-js
+56 info build F:\TEST\node_modules\base64-js
+57 info preinstall base64-js@1.5.1
+58 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+59 info linkStuff base64-js@1.5.1
+60 verbose linkBins base64-js@1.5.1
+61 verbose linkMans base64-js@1.5.1
+62 verbose rebuildBundles base64-js@1.5.1
+63 info install base64-js@1.5.1
+64 info postinstall base64-js@1.5.1
+65 verbose rebuild bundle F:\TEST\node_modules\bindings
+66 info build F:\TEST\node_modules\bindings
+67 info preinstall bindings@1.2.1
+68 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+69 info linkStuff bindings@1.2.1
+70 verbose linkBins bindings@1.2.1
+71 verbose linkMans bindings@1.2.1
+72 verbose rebuildBundles bindings@1.2.1
+73 info install bindings@1.2.1
+74 info postinstall bindings@1.2.1
+75 verbose rebuild bundle F:\TEST\node_modules\bl
+76 info build F:\TEST\node_modules\bl
+77 info preinstall bl@4.1.0
+78 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+79 info linkStuff bl@4.1.0
+80 verbose linkBins bl@4.1.0
+81 verbose linkMans bl@4.1.0
+82 verbose rebuildBundles bl@4.1.0
+83 verbose rebuildBundles [ 'readable-stream' ]
+84 info install bl@4.1.0
+85 info postinstall bl@4.1.0
+86 verbose rebuild bundle F:\TEST\node_modules\buffer
+87 info build F:\TEST\node_modules\buffer
+88 info preinstall buffer@5.7.1
+89 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+90 info linkStuff buffer@5.7.1
+91 verbose linkBins buffer@5.7.1
+92 verbose linkMans buffer@5.7.1
+93 verbose rebuildBundles buffer@5.7.1
+94 info install buffer@5.7.1
+95 info postinstall buffer@5.7.1
+96 verbose rebuild bundle F:\TEST\node_modules\buffers
+97 info build F:\TEST\node_modules\buffers
+98 info preinstall buffers@0.1.1
+99 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+100 info linkStuff buffers@0.1.1
+101 verbose linkBins buffers@0.1.1
+102 verbose linkMans buffers@0.1.1
+103 verbose rebuildBundles buffers@0.1.1
+104 info install buffers@0.1.1
+105 info postinstall buffers@0.1.1
+106 verbose rebuild bundle F:\TEST\node_modules\chownr
+107 info build F:\TEST\node_modules\chownr
+108 info preinstall chownr@1.1.4
+109 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+110 info linkStuff chownr@1.1.4
+111 verbose linkBins chownr@1.1.4
+112 verbose linkMans chownr@1.1.4
+113 verbose rebuildBundles chownr@1.1.4
+114 info install chownr@1.1.4
+115 info postinstall chownr@1.1.4
+116 verbose rebuild bundle F:\TEST\node_modules\code-point-at
+117 info build F:\TEST\node_modules\code-point-at
+118 info preinstall code-point-at@1.1.0
+119 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+120 info linkStuff code-point-at@1.1.0
+121 verbose linkBins code-point-at@1.1.0
+122 verbose linkMans code-point-at@1.1.0
+123 verbose rebuildBundles code-point-at@1.1.0
+124 info install code-point-at@1.1.0
+125 info postinstall code-point-at@1.1.0
+126 verbose rebuild bundle F:\TEST\node_modules\console-control-strings
+127 info build F:\TEST\node_modules\console-control-strings
+128 info preinstall console-control-strings@1.1.0
+129 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+130 info linkStuff console-control-strings@1.1.0
+131 verbose linkBins console-control-strings@1.1.0
+132 verbose linkMans console-control-strings@1.1.0
+133 verbose rebuildBundles console-control-strings@1.1.0
+134 info install console-control-strings@1.1.0
+135 info postinstall console-control-strings@1.1.0
+136 verbose rebuild bundle F:\TEST\node_modules\core-util-is
+137 info build F:\TEST\node_modules\core-util-is
+138 info preinstall core-util-is@1.0.2
+139 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+140 info linkStuff core-util-is@1.0.2
+141 verbose linkBins core-util-is@1.0.2
+142 verbose linkMans core-util-is@1.0.2
+143 verbose rebuildBundles core-util-is@1.0.2
+144 info install core-util-is@1.0.2
+145 info postinstall core-util-is@1.0.2
+146 verbose rebuild bundle F:\TEST\node_modules\debug
+147 info build F:\TEST\node_modules\debug
+148 info preinstall debug@2.6.9
+149 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+150 info linkStuff debug@2.6.9
+151 verbose linkBins debug@2.6.9
+152 verbose linkMans debug@2.6.9
+153 verbose rebuildBundles debug@2.6.9
+154 info install debug@2.6.9
+155 info postinstall debug@2.6.9
+156 verbose rebuild bundle F:\TEST\node_modules\decompress-response
+157 info build F:\TEST\node_modules\decompress-response
+158 info preinstall decompress-response@4.2.1
+159 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+160 info linkStuff decompress-response@4.2.1
+161 verbose linkBins decompress-response@4.2.1
+162 verbose linkMans decompress-response@4.2.1
+163 verbose rebuildBundles decompress-response@4.2.1
+164 info install decompress-response@4.2.1
+165 info postinstall decompress-response@4.2.1
+166 verbose rebuild bundle F:\TEST\node_modules\deep-extend
+167 info build F:\TEST\node_modules\deep-extend
+168 info preinstall deep-extend@0.6.0
+169 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+170 info linkStuff deep-extend@0.6.0
+171 verbose linkBins deep-extend@0.6.0
+172 verbose linkMans deep-extend@0.6.0
+173 verbose rebuildBundles deep-extend@0.6.0
+174 info install deep-extend@0.6.0
+175 info postinstall deep-extend@0.6.0
+176 verbose rebuild bundle F:\TEST\node_modules\delegates
+177 info build F:\TEST\node_modules\delegates
+178 info preinstall delegates@1.0.0
+179 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+180 info linkStuff delegates@1.0.0
+181 verbose linkBins delegates@1.0.0
+182 verbose linkMans delegates@1.0.0
+183 verbose rebuildBundles delegates@1.0.0
+184 info install delegates@1.0.0
+185 info postinstall delegates@1.0.0
+186 verbose rebuild bundle F:\TEST\node_modules\detect-libc
+187 info build F:\TEST\node_modules\detect-libc
+188 info preinstall detect-libc@1.0.3
+189 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+190 info linkStuff detect-libc@1.0.3
+191 verbose linkBins detect-libc@1.0.3
+192 verbose link bins [ { 'detect-libc': 'bin/detect-libc.js' },
+192 verbose link bins   'F:\\TEST\\node_modules\\.bin',
+192 verbose link bins   false ]
+193 verbose linkMans detect-libc@1.0.3
+194 verbose rebuildBundles detect-libc@1.0.3
+195 info install detect-libc@1.0.3
+196 info postinstall detect-libc@1.0.3
+197 verbose rebuild bundle F:\TEST\node_modules\end-of-stream
+198 info build F:\TEST\node_modules\end-of-stream
+199 info preinstall end-of-stream@1.4.4
+200 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+201 info linkStuff end-of-stream@1.4.4
+202 verbose linkBins end-of-stream@1.4.4
+203 verbose linkMans end-of-stream@1.4.4
+204 verbose rebuildBundles end-of-stream@1.4.4
+205 info install end-of-stream@1.4.4
+206 info postinstall end-of-stream@1.4.4
+207 verbose rebuild bundle F:\TEST\node_modules\expand-template
+208 info build F:\TEST\node_modules\expand-template
+209 info preinstall expand-template@2.0.3
+210 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+211 info linkStuff expand-template@2.0.3
+212 verbose linkBins expand-template@2.0.3
+213 verbose linkMans expand-template@2.0.3
+214 verbose rebuildBundles expand-template@2.0.3
+215 info install expand-template@2.0.3
+216 info postinstall expand-template@2.0.3
+217 verbose rebuild bundle F:\TEST\node_modules\fs-constants
+218 info build F:\TEST\node_modules\fs-constants
+219 info preinstall fs-constants@1.0.0
+220 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+221 info linkStuff fs-constants@1.0.0
+222 verbose linkBins fs-constants@1.0.0
+223 verbose linkMans fs-constants@1.0.0
+224 verbose rebuildBundles fs-constants@1.0.0
+225 info install fs-constants@1.0.0
+226 info postinstall fs-constants@1.0.0
+227 verbose rebuild bundle F:\TEST\node_modules\gauge
+228 info build F:\TEST\node_modules\gauge
+229 info preinstall gauge@2.7.4
+230 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+231 info linkStuff gauge@2.7.4
+232 verbose linkBins gauge@2.7.4
+233 verbose linkMans gauge@2.7.4
+234 verbose rebuildBundles gauge@2.7.4
+235 info install gauge@2.7.4
+236 info postinstall gauge@2.7.4
+237 verbose rebuild bundle F:\TEST\node_modules\github-from-package
+238 info build F:\TEST\node_modules\github-from-package
+239 info preinstall github-from-package@0.0.0
+240 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+241 info linkStuff github-from-package@0.0.0
+242 verbose linkBins github-from-package@0.0.0
+243 verbose linkMans github-from-package@0.0.0
+244 verbose rebuildBundles github-from-package@0.0.0
+245 info install github-from-package@0.0.0
+246 info postinstall github-from-package@0.0.0
+247 verbose rebuild bundle F:\TEST\node_modules\has-unicode
+248 info build F:\TEST\node_modules\has-unicode
+249 info preinstall has-unicode@2.0.1
+250 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+251 info linkStuff has-unicode@2.0.1
+252 verbose linkBins has-unicode@2.0.1
+253 verbose linkMans has-unicode@2.0.1
+254 verbose rebuildBundles has-unicode@2.0.1
+255 info install has-unicode@2.0.1
+256 info postinstall has-unicode@2.0.1
+257 verbose rebuild bundle F:\TEST\node_modules\ieee754
+258 info build F:\TEST\node_modules\ieee754
+259 info preinstall ieee754@1.2.1
+260 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+261 info linkStuff ieee754@1.2.1
+262 verbose linkBins ieee754@1.2.1
+263 verbose linkMans ieee754@1.2.1
+264 verbose rebuildBundles ieee754@1.2.1
+265 info install ieee754@1.2.1
+266 info postinstall ieee754@1.2.1
+267 verbose rebuild bundle F:\TEST\node_modules\inherits
+268 info build F:\TEST\node_modules\inherits
+269 info preinstall inherits@2.0.4
+270 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+271 info linkStuff inherits@2.0.4
+272 verbose linkBins inherits@2.0.4
+273 verbose linkMans inherits@2.0.4
+274 verbose rebuildBundles inherits@2.0.4
+275 info install inherits@2.0.4
+276 info postinstall inherits@2.0.4
+277 verbose rebuild bundle F:\TEST\node_modules\ini
+278 info build F:\TEST\node_modules\ini
+279 info preinstall ini@1.3.8
+280 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+281 info linkStuff ini@1.3.8
+282 verbose linkBins ini@1.3.8
+283 verbose linkMans ini@1.3.8
+284 verbose rebuildBundles ini@1.3.8
+285 info install ini@1.3.8
+286 info postinstall ini@1.3.8
+287 verbose rebuild bundle F:\TEST\node_modules\is-fullwidth-code-point
+288 info build F:\TEST\node_modules\is-fullwidth-code-point
+289 info preinstall is-fullwidth-code-point@1.0.0
+290 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+291 info linkStuff is-fullwidth-code-point@1.0.0
+292 verbose linkBins is-fullwidth-code-point@1.0.0
+293 verbose linkMans is-fullwidth-code-point@1.0.0
+294 verbose rebuildBundles is-fullwidth-code-point@1.0.0
+295 info install is-fullwidth-code-point@1.0.0
+296 info postinstall is-fullwidth-code-point@1.0.0
+297 verbose rebuild bundle F:\TEST\node_modules\isarray
+298 info build F:\TEST\node_modules\isarray
+299 info preinstall isarray@1.0.0
+300 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+301 info linkStuff isarray@1.0.0
+302 verbose linkBins isarray@1.0.0
+303 verbose linkMans isarray@1.0.0
+304 verbose rebuildBundles isarray@1.0.0
+305 info install isarray@1.0.0
+306 info postinstall isarray@1.0.0
+307 verbose rebuild bundle F:\TEST\node_modules\mimic-response
+308 info build F:\TEST\node_modules\mimic-response
+309 info preinstall mimic-response@2.1.0
+310 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+311 info linkStuff mimic-response@2.1.0
+312 verbose linkBins mimic-response@2.1.0
+313 verbose linkMans mimic-response@2.1.0
+314 verbose rebuildBundles mimic-response@2.1.0
+315 info install mimic-response@2.1.0
+316 info postinstall mimic-response@2.1.0
+317 verbose rebuild bundle F:\TEST\node_modules\minimist
+318 info build F:\TEST\node_modules\minimist
+319 info preinstall minimist@1.2.5
+320 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+321 info linkStuff minimist@1.2.5
+322 verbose linkBins minimist@1.2.5
+323 verbose linkMans minimist@1.2.5
+324 verbose rebuildBundles minimist@1.2.5
+325 info install minimist@1.2.5
+326 info postinstall minimist@1.2.5
+327 verbose rebuild bundle F:\TEST\node_modules\mkdirp-classic
+328 info build F:\TEST\node_modules\mkdirp-classic
+329 info preinstall mkdirp-classic@0.5.3
+330 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+331 info linkStuff mkdirp-classic@0.5.3
+332 verbose linkBins mkdirp-classic@0.5.3
+333 verbose linkMans mkdirp-classic@0.5.3
+334 verbose rebuildBundles mkdirp-classic@0.5.3
+335 info install mkdirp-classic@0.5.3
+336 info postinstall mkdirp-classic@0.5.3
+337 verbose rebuild bundle F:\TEST\node_modules\ms
+338 info build F:\TEST\node_modules\ms
+339 info preinstall ms@2.0.0
+340 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+341 info linkStuff ms@2.0.0
+342 verbose linkBins ms@2.0.0
+343 verbose linkMans ms@2.0.0
+344 verbose rebuildBundles ms@2.0.0
+345 info install ms@2.0.0
+346 info postinstall ms@2.0.0
+347 verbose rebuild bundle F:\TEST\node_modules\nan
+348 info build F:\TEST\node_modules\nan
+349 info preinstall nan@2.14.2
+350 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+351 info linkStuff nan@2.14.2
+352 verbose linkBins nan@2.14.2
+353 verbose linkMans nan@2.14.2
+354 verbose rebuildBundles nan@2.14.2
+355 info install nan@2.14.2
+356 info postinstall nan@2.14.2
+357 verbose rebuild bundle F:\TEST\node_modules\napi-build-utils
+358 info build F:\TEST\node_modules\napi-build-utils
+359 info preinstall napi-build-utils@1.0.2
+360 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+361 info linkStuff napi-build-utils@1.0.2
+362 verbose linkBins napi-build-utils@1.0.2
+363 verbose linkMans napi-build-utils@1.0.2
+364 verbose rebuildBundles napi-build-utils@1.0.2
+365 info install napi-build-utils@1.0.2
+366 info postinstall napi-build-utils@1.0.2
+367 verbose rebuild bundle F:\TEST\node_modules\node-abi
+368 info build F:\TEST\node_modules\node-abi
+369 info preinstall node-abi@2.30.0
+370 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+371 info linkStuff node-abi@2.30.0
+372 verbose linkBins node-abi@2.30.0
+373 verbose linkMans node-abi@2.30.0
+374 verbose rebuildBundles node-abi@2.30.0
+375 info install node-abi@2.30.0
+376 info postinstall node-abi@2.30.0
+377 verbose rebuild bundle F:\TEST\node_modules\noop-logger
+378 info build F:\TEST\node_modules\noop-logger
+379 info preinstall noop-logger@0.1.1
+380 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+381 info linkStuff noop-logger@0.1.1
+382 verbose linkBins noop-logger@0.1.1
+383 verbose linkMans noop-logger@0.1.1
+384 verbose rebuildBundles noop-logger@0.1.1
+385 info install noop-logger@0.1.1
+386 info postinstall noop-logger@0.1.1
+387 verbose rebuild bundle F:\TEST\node_modules\npmlog
+388 info build F:\TEST\node_modules\npmlog
+389 info preinstall npmlog@4.1.2
+390 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+391 info linkStuff npmlog@4.1.2
+392 verbose linkBins npmlog@4.1.2
+393 verbose linkMans npmlog@4.1.2
+394 verbose rebuildBundles npmlog@4.1.2
+395 info install npmlog@4.1.2
+396 info postinstall npmlog@4.1.2
+397 verbose rebuild bundle F:\TEST\node_modules\number-is-nan
+398 info build F:\TEST\node_modules\number-is-nan
+399 info preinstall number-is-nan@1.0.1
+400 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+401 info linkStuff number-is-nan@1.0.1
+402 verbose linkBins number-is-nan@1.0.1
+403 verbose linkMans number-is-nan@1.0.1
+404 verbose rebuildBundles number-is-nan@1.0.1
+405 info install number-is-nan@1.0.1
+406 info postinstall number-is-nan@1.0.1
+407 verbose rebuild bundle F:\TEST\node_modules\object-assign
+408 info build F:\TEST\node_modules\object-assign
+409 info preinstall object-assign@4.1.1
+410 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+411 info linkStuff object-assign@4.1.1
+412 verbose linkBins object-assign@4.1.1
+413 verbose linkMans object-assign@4.1.1
+414 verbose rebuildBundles object-assign@4.1.1
+415 info install object-assign@4.1.1
+416 info postinstall object-assign@4.1.1
+417 verbose rebuild bundle F:\TEST\node_modules\once
+418 info build F:\TEST\node_modules\once
+419 info preinstall once@1.4.0
+420 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+421 info linkStuff once@1.4.0
+422 verbose linkBins once@1.4.0
+423 verbose linkMans once@1.4.0
+424 verbose rebuildBundles once@1.4.0
+425 info install once@1.4.0
+426 info postinstall once@1.4.0
+427 verbose rebuild bundle F:\TEST\node_modules\prebuild-install
+428 info build F:\TEST\node_modules\prebuild-install
+429 info preinstall prebuild-install@5.3.6
+430 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+431 info linkStuff prebuild-install@5.3.6
+432 verbose linkBins prebuild-install@5.3.6
+433 verbose link bins [ { 'prebuild-install': 'bin.js' },
+433 verbose link bins   'F:\\TEST\\node_modules\\.bin',
+433 verbose link bins   false ]
+434 verbose linkMans prebuild-install@5.3.6
+435 verbose rebuildBundles prebuild-install@5.3.6
+436 info install prebuild-install@5.3.6
+437 info postinstall prebuild-install@5.3.6
+438 verbose rebuild bundle F:\TEST\node_modules\process-nextick-args
+439 info build F:\TEST\node_modules\process-nextick-args
+440 info preinstall process-nextick-args@2.0.1
+441 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+442 info linkStuff process-nextick-args@2.0.1
+443 verbose linkBins process-nextick-args@2.0.1
+444 verbose linkMans process-nextick-args@2.0.1
+445 verbose rebuildBundles process-nextick-args@2.0.1
+446 info install process-nextick-args@2.0.1
+447 info postinstall process-nextick-args@2.0.1
+448 verbose rebuild bundle F:\TEST\node_modules\pump
+449 info build F:\TEST\node_modules\pump
+450 info preinstall pump@3.0.0
+451 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+452 info linkStuff pump@3.0.0
+453 verbose linkBins pump@3.0.0
+454 verbose linkMans pump@3.0.0
+455 verbose rebuildBundles pump@3.0.0
+456 info install pump@3.0.0
+457 info postinstall pump@3.0.0
+458 verbose rebuild bundle F:\TEST\node_modules\rc
+459 info build F:\TEST\node_modules\rc
+460 info preinstall rc@1.2.8
+461 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+462 info linkStuff rc@1.2.8
+463 verbose linkBins rc@1.2.8
+464 verbose link bins [ { rc: 'cli.js' }, 'F:\\TEST\\node_modules\\.bin', false ]
+465 verbose linkMans rc@1.2.8
+466 verbose rebuildBundles rc@1.2.8
+467 info install rc@1.2.8
+468 info postinstall rc@1.2.8
+469 verbose rebuild bundle F:\TEST\node_modules\readable-stream
+470 info build F:\TEST\node_modules\readable-stream
+471 info preinstall readable-stream@2.3.7
+472 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+473 info linkStuff readable-stream@2.3.7
+474 verbose linkBins readable-stream@2.3.7
+475 verbose linkMans readable-stream@2.3.7
+476 verbose rebuildBundles readable-stream@2.3.7
+477 info install readable-stream@2.3.7
+478 info postinstall readable-stream@2.3.7
+479 verbose rebuild bundle F:\TEST\node_modules\ref
+480 info build F:\TEST\node_modules\ref
+481 info preinstall ref@1.3.5
+482 verbose linkStuff [ false, false, false, 'F:\\TEST\\node_modules' ]
+483 info linkStuff ref@1.3.5
+484 verbose linkBins ref@1.3.5
+485 verbose linkMans ref@1.3.5
+486 verbose rebuildBundles ref@1.3.5
+487 info install ref@1.3.5
+488 verbose unsafe-perm in lifecycle true
+489 info ref@1.3.5 Failed to exec install script
+490 verbose stack Error: ref@1.3.5 install: `node-gyp rebuild`
+490 verbose stack Exit status 1
+490 verbose stack     at EventEmitter.<anonymous> (C:\Users\Howard\AppData\Roaming\nvm\v0.12.0\node_modules\npm\lib\utils\lifecycle.js:213:16)
+490 verbose stack     at EventEmitter.emit (events.js:110:17)
+490 verbose stack     at ChildProcess.<anonymous> (C:\Users\Howard\AppData\Roaming\nvm\v0.12.0\node_modules\npm\lib\utils\spawn.js:14:12)
+490 verbose stack     at ChildProcess.emit (events.js:110:17)
+490 verbose stack     at maybeClose (child_process.js:1008:16)
+490 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+491 verbose pkgid ref@1.3.5
+492 verbose cwd F:\TEST
+493 error Windows_NT 6.3.9600
+494 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+495 error node v0.12.0
+496 error npm  v2.5.1
+497 error code ELIFECYCLE
+498 error ref@1.3.5 install: `node-gyp rebuild`
+498 error Exit status 1
+499 error Failed at the ref@1.3.5 install script 'node-gyp rebuild'.
+499 error This is most likely a problem with the ref package,
+499 error not with npm itself.
+499 error Tell the author that this fails on your system:
+499 error     node-gyp rebuild
+499 error You can get their info via:
+499 error     npm owner ls ref
+499 error There is likely additional logging output above.
+500 verbose exit [ 1, true ]

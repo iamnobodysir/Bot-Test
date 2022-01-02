@@ -1,4 +1,7 @@
-const cv = require('opencv4nodejs');
+/**
+ * Running at Node 16.5.0
+ */
+
 const robot = require('robotjs');
 const crypto = require('crypto');
 const dateFormat = require('dateformat');
@@ -11,10 +14,23 @@ const SCREEN_RESOLUTION_Y = 2560;
 const SCREEN_RESOLUTION_X = 1440;
 
 const WANTED_POSITION = {
-    x_min: 2089,
+    //x_min: 2089,
+    x_min: 2092,
+    //x_max: 2107,
     x_max: 2107,
-    y_min: 1131,
-    y_max: 1149
+    //y_min: 1131,
+    y_min: 1122,
+    //y_max: 1149
+    y_max: 1136
+};
+
+const WANTED_POSITION_BANKER = {
+    // 1055 334
+    //1096 461    
+    x_min: 1055,
+    x_max: 1096,
+    y_min: 334,
+    y_max: 461
 };
 
 const EMPTY_INVENTORY_COLOR = [
@@ -44,72 +60,169 @@ const EMPTY_INVENTORY_COLOR = [
     "162a34",
 ];
 
+
+// TODO put in param
+let bot_work = 'alchemy';
+
 function main() {
     console.log('Program Starting...');
 
     try {
-        msleep(5000);
-        //getPixelColor(null, null, true);
-
-        let previous_xPosition = null;
-        let previous_yPosition = null;
-        let restFor = rand_range(30000, 420000 + 1);
-        let startTime = Date.now();
-        let startDate = dateFormat(startTime);
-        console.log('Rest for (minutes): ', restFor / 60000);
-
-        //while (Date.now() - startTime < restAt) {
-        while (true) {
-            console.log('A loop start.');
-
-            if (!(Date.now() - startTime < restFor)) {
-                let randTime = rand_range(0, 294000 + 1);
-                console.log('To pause for (minutes): ', randTime / 60000)
-
-                msleep(randTime);
-                restFor = rand_range(30000, 420000 + 1);
-                startTime = Date.now();
-                console.log('Start time: ', dateFormat(startTime));
-                console.log('Rest for (minutes): ', restFor / 60000);
-            }
-
-            let xPosition = rand_range(WANTED_POSITION.x_min, WANTED_POSITION.x_max + 1);
-            let yPosition = rand_range(WANTED_POSITION.y_min, WANTED_POSITION.y_max + 1);
-
-            // Guessing...
-            if (rand_range(0, 1 + 1) === 1 && (previous_xPosition != null && previous_yPosition != null)) {
-                xPosition = previous_xPosition;
-                yPosition = previous_yPosition;
-            }
-
-            msleep(rand_range(0, 3000 + 1));
-
-            console.log('Moving to X coordinate:', xPosition, ' and Y coordinate: ', yPosition);
-            robot.moveMouseSmooth(xPosition, yPosition);
-
-            robot.keyTap('numpad_2');
-
-            msleep(rand_range(0, 2000 + 1));
-            robot.mouseClick();
-
-            if (_.includes(EMPTY_INVENTORY_COLOR, getPixelColor(xPosition, yPosition))) {
-                console.table(EMPTY_INVENTORY_COLOR);
+        switch (bot_work) {
+            case 'fletching':
+                fletching();
                 break;
-            }
-
-            previous_xPosition = xPosition;
-            previous_yPosition = yPosition;
+            case 'alchemy':
+                alchemy();
+                break;
         }
-
-        console.table({
-            started: startDate,
-            ended: dateFormat(Date.now())
-        });
 
         return 0;
     } catch (error) {
         console.error(error);
     }
+}
+
+function fletching() {
+    msleep(5000);
+    //getPixelColor(null, null, true);
+
+    let previous_xPosition = null;
+    let previous_yPosition = null;
+    let nextRest = rand_range(30000, 300000 + 1);
+    let startTime = Date.now();
+    let startDate = dateFormat(startTime);
+    console.log('Rest for (minutes): ', nextRest / 60000);
+
+    //while (Date.now() - startTime < restAt) {
+    while (true) {
+        console.log('A loop start.');
+
+        if (!(Date.now() - startTime < nextRest)) {
+            let randTime = rand_range(0, 240000 + 1);
+            console.log('To pause for (minutes): ', randTime / 60000)
+
+            msleep(randTime);
+            nextRest = rand_range(30000, 300000 + 1);
+            startTime = Date.now();
+            console.log('Start time: ', dateFormat(startTime));
+            console.log('Rest for (minutes): ', nextRest / 60000);
+        }
+
+        let xPosition = rand_range(WANTED_POSITION_BANKER.x_min, WANTED_POSITION_BANKER.x_max + 1);
+        let yPosition = rand_range(WANTED_POSITION_BANKER.y_min, WANTED_POSITION_BANKER.y_max + 1);
+
+        // Guessing...
+        if (rand_range(0, 1 + 1) === 1 && (previous_xPosition != null && previous_yPosition != null)) {
+            xPosition = previous_xPosition;
+            yPosition = previous_yPosition;
+        }
+
+        msleep(rand_range(0, 3000 + 1));
+
+        console.log('Moving to X coordinate:', xPosition, ' and Y coordinate: ', yPosition);
+        robot.moveMouse(xPosition, yPosition);
+        msleep(rand_range(0, 2000 + 1));
+        robot.mouseClick();
+
+        msleep(rand_range(1000, 2000 + 1));
+        robot.keyTap('numpad_2');
+        console.log('click 2');
+
+        // To Fletch
+        msleep(rand_range(1000, 2000 + 1));
+        robot.keyTap('numpad_3');
+        console.log('click 3');
+
+        msleep(rand_range(1000, 2000 + 1));
+        robot.keyTap('space');
+        console.log('click space');
+
+        msleep(rand_range(16000, 20000 + 1)); // Fletching...
+
+        let xPosition_Inventory = 2100; // rand_range(WANTED_POSITION.x_min, WANTED_POSITION.x_max + 1);
+        let yPosition_Inventory = 1151; //rand_range(WANTED_POSITION.y_min, WANTED_POSITION.y_max + 1);
+        // robot.moveMouse(xPosition_Inventory, yPosition_Inventory);
+
+        if (_.includes(EMPTY_INVENTORY_COLOR, getPixelColor(xPosition_Inventory, yPosition_Inventory))) {
+            console.table(EMPTY_INVENTORY_COLOR);
+            break;
+        }
+
+        previous_xPosition = xPosition;
+        previous_yPosition = yPosition;
+    }
+
+    console.table({
+        started: startDate,
+        ended: dateFormat(Date.now())
+    });
+}
+
+function alchemy() {
+    msleep(5000);
+    //getPixelColor(null, null, true);
+
+    let previous_xPosition = null;
+    let previous_yPosition = null;
+    let nextRest = rand_range(30000, 300000 + 1);
+    let startTime = Date.now();
+    let startDate = dateFormat(startTime);
+    console.log('Rest for (minutes): ', nextRest / 60000);
+
+    //while (Date.now() - startTime < restAt) {
+    while (true) {
+        console.log('A loop start.');
+
+        if (!(Date.now() - startTime < nextRest)) {
+            let randTime = rand_range(0, 240000 + 1);
+            console.log('To pause for (minutes): ', randTime / 60000)
+
+            msleep(randTime);
+            nextRest = rand_range(30000, 300000 + 1);
+            startTime = Date.now();
+            console.log('Start time: ', dateFormat(startTime));
+            console.log('Rest for (minutes): ', nextRest / 60000);
+        }
+
+        let xPosition = rand_range(WANTED_POSITION.x_min, WANTED_POSITION.x_max + 1);
+        let yPosition = rand_range(WANTED_POSITION.y_min, WANTED_POSITION.y_max + 1);
+
+        // Guessing...
+        if (rand_range(0, 1 + 1) === 1 && (previous_xPosition != null && previous_yPosition != null)) {
+            xPosition = previous_xPosition;
+            yPosition = previous_yPosition;
+        }
+
+        msleep(rand_range(0, 3000 + 1));
+
+        console.log('Moving to X coordinate:', xPosition, ' and Y coordinate: ', yPosition);
+        robot.moveMouseSmooth(xPosition, yPosition);
+
+        robot.keyTap('numpad_2');
+
+        msleep(rand_range(0, 2000 + 1));
+        robot.mouseClick();
+
+        if (_.includes(EMPTY_INVENTORY_COLOR, getPixelColor(xPosition, yPosition))) {
+            console.table(EMPTY_INVENTORY_COLOR);
+            break;
+        }
+
+        // let key = cv.waitKey(1)
+
+        // if (key == ord('q')) {
+        //     break;
+        // }
+
+        previous_xPosition = xPosition;
+        previous_yPosition = yPosition;
+    }
+
+    console.table({
+        started: startDate,
+        ended: dateFormat(Date.now())
+    });
 }
 
 if (require.main === module) {
@@ -161,4 +274,8 @@ function rand_range(min, max) { //inclusive of min, exclusive of max
     var rnd = Number(seed * 1000000000000000n / _m * diff) / 1000000000000000;
 
     return Number(min + BigInt(Math.floor(rnd)));
+}
+
+function ord(str) {
+    return str.charCodeAt(0);
 }

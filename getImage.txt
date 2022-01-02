@@ -1,0 +1,64 @@
+// node-gyp configure
+// node-gyp rebuild
+/*then to make a node module*/
+#include <node.h>
+#include <Windows.h>
+#include <string>
+
+using namespace v8;
+using namespace std;
+
+namespace GetImage
+{
+    using v8::FunctionCallbackInfo;
+    using v8::Isolate;
+    using v8::Local;
+    using v8::Number;
+    using v8::Object;
+    using v8::Value;
+    using v8::Buffer;
+
+    void GetImage(const FunctionCallbackInfo<Value> &args)
+    {
+        Isolate *isolate = args.GetIsolate();
+
+        LPCWSTR title = L"RuneScape";
+        HWND hwnD = FindWindowW(NULL, title);
+
+        RECT rect;
+        GetWindowRect(hwnD, &rect);
+
+        int width = rect.right - rect.left;
+        int height = rect.bottom - rect.top;
+
+        HDC wDC = GetDC(hwnD);
+        HDC cDC = CreateCompatibleDC(wDC);
+
+        HBITMAP bmpTarget = CreateCompatibleBitmap(cDC, width, height);
+
+        HBITMAP hOldBitmap = static_cast<HBITMAP>(SelectObject(cDC, bmpTarget));
+
+        HGDIOBJ oldBmp = SelectObject(cDC, bmpTarget);
+
+        BitBlt(cDC, 0, 0, width, height, wDC, 0, 0, SRCCOPY);
+        // DWORD dwSize = width * height;
+        // char *pData = new char[dwSize];
+
+        // long temp = GetBitmapBits(bmpTarget, NULL, NULL);
+        bmpTarget = static_cast<HBITMAP>(SelectObject(cDC, hOldBitmap));
+
+        // Free Resources
+        SelectObject(cDC, oldBmp);
+        DeleteDC(cDC);
+        ReleaseDC(hwnD, wDC);
+
+        args.GetReturnValue().Set(0);
+    }
+
+    void Initialize(Local<Object> exports)
+    {
+        NODE_SET_METHOD(exports, "hello", GetImage);
+    }
+
+    NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
+}
